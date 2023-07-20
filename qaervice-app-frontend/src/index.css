@@ -1,13 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+h2 {
+  font-size: 3rem;
 }
+.filledButton {
+  height: 3rem;
+  width: 100%;
+  font-size: 2rem;
+  border-radius: 0.4rem;
+  background-color: hsl(var(--brand-500));
+  outline: none;
+  box-shadow: none;
+  border: none;
+  color: hsl(var(--grey-100));
+  box-shadow: -0.2rem 0.2rem 1rem hsl(var(--brand-600));
+}
+:root {
+  font-size: calc(15px + 0.390625vw);
+  --brand-100: 265 61% 80%;
+  --brand-200: 265 63% 70%;
+  --brand-300: 265 53% 62%;
+  --brand-400: 265 65% 57%;
+  --brand-500: 265 68% 40%;
+  --brand-600: 265 83% 31%;
+  --brand-700: 265 83% 16%;
+  --brand-800: 265 87% 12%;
+  --brand-900: 265 92% 7%;
+  --grey-100: 265 43% 89%;
+  --grey-200: 265 39% 84%;
+  --grey-300: 265 20% 74%;
+  --grey-400: 265 17% 68%;
+  --grey-500: 265 6% 46%;
+  --grey-600: 265 8% 37%;
+  --grey-700: 265 7% 23%;
+  --grey-800: 255 7% 17%;
+  --grey-900: 265 6% 10%;
+  --success-100: 131 61% 80%;
+  --success-200: 131 63% 70%;
+  --success-300: 131 53% 62%;
+  --success-400: 131 65% 57%;
+  --success-500: 131 68% 40%;
+  --success-600: 131 83% 31%;
+  --success-700: 131 83% 16%;
+  --success-800: 131 87% 12%;
+  --success-900: 131 92% 7%;
+  --warn-100: 37 61% 80%;
+  --warn-200: 37 63% 70%;
+  --warn-300: 37 53% 62%;
+  --warn-400: 37 65% 57%;
+  --warn-500: 37 68% 40%;
+  --warn-600: 37 83% 31%;
+  --warn-700: 37 83% 16%;
+  --warn-800: 37 87% 12%;
+  --warn-900: 37 92% 7%;
+  --error-100: 343 61% 80%;
+  --error-200: 343 63% 70%;
+  --error-300: 343 53% 62%;
+  --error-400: 343 65% 57%;
+  --error-500: 343 68% 40%;
+  --error-600: 343 83% 31%;
+  --error-700: 343 83% 16%;
+  --error-800: 343 87% 12%;
+  --error-900: 343 92% 7%;
+}
+
+

@@ -1,0 +1,142 @@
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+}
+.b1 {
+  background-color: hsl(var(--brand-100));
+}
+.b2 {
+  background-color: hsl(var(--brand-200));
+}
+.b3 {
+  background-color: hsl(var(--brand-300));
+}
+.b4 {
+  background-color: hsl(var(--brand-400));
+}
+.b5 {
+  background-color: hsl(var(--brand-500));
+}
+.b6 {
+  background-color: hsl(var(--brand-600));
+}
+.b7 {
+  background-color: hsl(var(--brand-700));
+}
+.b8 {
+  background-color: hsl(var(--brand-800));
+}
+.b9 {
+  background-color: hsl(var(--brand-900));
+}
+.g1 {
+  background-color: hsl(var(--grey-100));
+}
+.g2 {
+  background-color: hsl(var(--grey-200));
+}
+.g3 {
+  background-color: hsl(var(--grey-300));
+}
+.g4 {
+  background-color: hsl(var(--grey-400));
+}
+.g5 {
+  background-color: hsl(var(--grey-500));
+}
+.g6 {
+  background-color: hsl(var(--grey-600));
+}
+.g7 {
+  background-color: hsl(var(--grey-700));
+}
+.g8 {
+  background-color: hsl(var(--grey-800));
+}
+.g9 {
+  background-color: hsl(var(--grey-900));
+}
+.s1 {
+  background-color: hsl(var(--success-100));
+}
+.s2 {
+  background-color: hsl(var(--success-200));
+}
+.s3 {
+  background-color: hsl(var(--success-300));
+}
+.s4 {
+  background-color: hsl(var(--success-400));
+}
+.s5 {
+  background-color: hsl(var(--success-500));
+}
+.s6 {
+  background-color: hsl(var(--success-600));
+}
+.s7 {
+  background-color: hsl(var(--success-700));
+}
+.s8 {
+  background-color: hsl(var(--success-800));
+}
+.s9 {
+  background-color: hsl(var(--success-900));
+}
+.w1 {
+  background-color: hsl(var(--warn-100));
+}
+.w2 {
+  background-color: hsl(var(--warn-200));
+}
+.w3 {
+  background-color: hsl(var(--warn-300));
+}
+.w4 {
+  background-color: hsl(var(--warn-400));
+}
+.w5 {
+  background-color: hsl(var(--warn-500));
+}
+.w6 {
+  background-color: hsl(var(--warn-600));
+}
+.w7 {
+  background-color: hsl(var(--warn-700));
+}
+.w8 {
+  background-color: hsl(var(--warn-800));
+}
+.w9 {
+  background-color: hsl(var(--warn-900));
+}
+.e1 {
+  background-color: hsl(var(--error-100));
+}
+.e2 {
+  background-color: hsl(var(--error-200));
+}
+.e3 {
+  background-color: hsl(var(--error-300));
+}
+.e4 {
+  background-color: hsl(var(--error-400));
+}
+.e5 {
+  background-color: hsl(var(--error-500));
+}
+.e6 {
+  background-color: hsl(var(--error-600));
+}
+.e7 {
+  background-color: hsl(var(--error-700));
+}
+.e8 {
+  background-color: hsl(var(--error-800));
+}
+.e9 {
+  background-color: hsl(var(--error-900));
+}
