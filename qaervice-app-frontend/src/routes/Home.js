@@ -1,11 +1,33 @@
 import './Home.css';
+import JobHome from '../components/JobHome';
+import Logo from '../images/logo.png';
+import HomeWrapper from '../components/HomeWrapper'
 
 const Home = () => {
   return (
-    <div>
-
-    </div>
+        <HomeWrapper pos={0}>
+          <main className="HomeGrid">
+            <article className="HomeNumEmployees">
+              <h3>Number of Employees:</h3>
+              <h2>5</h2>
+            </article> 
+            <article className="HomeNumJobs">
+              <h3>Number of Jobs this week:</h3>
+              <h2>27</h2>
+            </article> 
+            <article className="HomeRating">
+              <h3>Average rating:</h3>
+              <h2>4.7</h2>
+            </article> 
+            <article className="HomeJobs">
+              <JobHome />
+              <JobHome />
+              <JobHome />
+            </article> 
+          </main>
+    </HomeWrapper>
   );
 };
+
 
 export default Home;

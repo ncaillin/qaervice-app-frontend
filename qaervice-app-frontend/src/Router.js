@@ -3,6 +3,9 @@ import Login from "./routes/Login"
 import Home from "./routes/Home";
 import Colors from "./routes/Colors"
 import Register from "./routes/Register"
+import Employees from './routes/Employees';
+import Jobs from './routes/Jobs';
+import Settings from './routes/Settings';
 
 const router = createBrowserRouter([
   {
@@ -20,6 +23,18 @@ const router = createBrowserRouter([
   {
     path: "/home",
     element: <Home />,
+  },
+  {
+    path: '/employees',
+    element: <Employees />,
+  },
+  {
+    path: '/jobs',
+    element: <Jobs />,
+  },
+  {
+    path: '/settings',
+    element: <Settings />,
   },
 ]);
 
