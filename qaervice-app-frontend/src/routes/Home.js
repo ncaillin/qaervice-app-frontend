@@ -20,6 +20,7 @@ const Home = () => {
               <h2>4.7</h2>
             </article> 
             <article className="HomeJobs">
+              <h3>Jobs in progress:</h3>
               <JobHome />
               <JobHome />
               <JobHome />

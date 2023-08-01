@@ -17,7 +17,7 @@ const JobHome = ({customer='HOUSEHOLD', time=0, tasks=0, employee='Employee Name
   return (
     <summary className='JobHomeWrapper'>
       <div className='JobName'>
-        <p>Nugent Household</p>
+        <p>{customer}</p>
         <div className='JobNameTasks'>
           <h2>{tasks}</h2>
           <p>tasks</p>

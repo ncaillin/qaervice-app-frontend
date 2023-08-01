@@ -1,0 +1,101 @@
+.EmployeeTableItemWrapper {
+  min-height: 6rem;
+  width: 100%;
+  max-width: 100%;
+  background-color: hsl(var(--grey-600));
+  display: grid;
+  padding: 0.5rem;
+  grid-gap: 0.5rem;
+  box-sizing: border-box;
+  grid-template-columns: 3fr 2fr 1fr 1fr 1fr;
+}
+.EmployeeTableItemButton {
+  border: none;
+  outline: none;
+  background-color: hsl(var(--grey-600));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(var(--grey-100));
+  font-size: 3rem;
+  font-family: 'Material Symbols Outlined';
+  border-style: solid;
+  border-color: hsl(var(--grey-500));
+  border-width: 0 0 0 0.1rem;
+}
+.EmployeeTableItemButton:hover {
+  background-color: hsl(var(--brand-500));
+  color: hsl(var(--brand-100));
+  font-size: 3rem;
+}
+.EmployeeTableItemButton  > p {
+  font-size: 0.8rem;
+  color: inherit;
+  margin: 0;
+ font-family: 'Roboto';
+}
+.EmployeeTableItemAvgRating {
+  background-color: hsl(var(--grey-600));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: hsl(var(--grey-100));
+  border-style: solid;
+  border-color: hsl(var(--grey-500));
+  border-width: 0 0 0 0.1rem;
+}
+.EmployeeTableItemAvgRating > p {
+  font-size: 0.8rem;
+  margin: 0;
+  text-align: center;
+}
+.EmployeeTableItemEmployee {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.EmployeeTableItemJobsCompleted {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  color: hsl(var(--grey-100));
+  text-align: center;
+  border-width: 0 0 0 0.1rem;
+  border-style: solid;
+  border-color: hsl(var(--grey-500));
+}
+.EmployeeTableItemJobsCompleted > h2 {
+  margin: 0;
+}
+.EmployeeTableItemJobsCompleted > p {
+  margin: 0;
+  font-size: 0.8rem;
+}
+.EmployeeTableItemPortraitWrapper {
+  width: 5rem;
+  aspect-ratio: 1 / 1;
+  border-style: solid;
+  border-width: 0.25rem;
+  border-radius: 100%;
+  border-color: hsl(var(--grey-900));
+  box-sizing: border-box;
+  overflow: hidden;
+}
+.EmployeeTableItemPortraitWrapper > img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+}
+@media (max-width: 800px) {
+  .EmployeeTableItemWrapper {
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 12.5rem;
+  }
+  .EmployeeTableItemEmployee {
+    grid-column: 1 / 3;
+  }
+  .EmployeeTableItemAvgRating {
+    border: none;
+  }
+}

@@ -1,0 +1,43 @@
+.EmployeeWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  gap: 0.5rem;
+}
+.EmployeeAdd {
+  width: 30%;
+  min-width: 15rem;
+  height: 20%;
+  border: none;
+  outline: none;
+  background-color: hsl(var(--grey-700));
+  position: relative;
+  font-family: 'Material Symbols Outlined';
+  font-size: 3rem;
+  color: hsl(var(--grey-100));
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.EmployeeAdd > p {
+  font-family: 'Roboto';
+  font-size: 1rem;
+  color: hsl(var(--grey-100));
+  margin: 0;
+}
+.EmployeeTable {
+  flex-grow: 1;
+  width: 100%;
+  background-color: hsl(var(--grey-700));
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  gap: 0.5rem;
+}
+.EmployeeTableItemPortraitWrapper {
+}

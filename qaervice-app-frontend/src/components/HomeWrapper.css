@@ -8,7 +8,6 @@
   padding: 0.5rem;
   grid-gap: 0.5rem;
   box-sizing: border-box;
-  border: 1px solid red;
   justify-items: center;
 }
 .HomeWrapperMenuWrapper {
@@ -45,7 +44,7 @@
 .HomeWrapperMain {
   width: 100%;
   max-width: 100%;
-  max-height: 50%;
+  height: 100%;
   display: grid;
   grid-template-rows: 1fr 9fr;
   box-sizing: border-box;
