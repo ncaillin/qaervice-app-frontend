@@ -5,6 +5,7 @@ import Colors from "./routes/Colors"
 import Register from "./routes/Register"
 import Employees from './routes/Employees';
 import Jobs from './routes/Jobs';
+import Customers from './routes/Customers';
 import Settings from './routes/Settings';
 
 const router = createBrowserRouter([
@@ -27,6 +28,10 @@ const router = createBrowserRouter([
   {
     path: '/employees',
     element: <Employees />,
+  },
+  {
+    path: '/customers',
+    element: <Customers />,
   },
   {
     path: '/jobs',

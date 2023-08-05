@@ -17,6 +17,9 @@ const HomeWrapper = ({children, pos=0}) => {
         <button className="HomeWrapperMobileMenuItem">Work
           <p className='HomeWrapperButtonFlavorText'>Jobs</p>
         </button> 
+        <button className="HomeWrapperMobileMenuItem">Person
+          <p className='HomeWrapperButtonFlavorText'>Customers</p>
+        </button> 
         <button className="HomeWrapperMobileMenuItem">Settings
           <p className='HomeWrapperButtonFlavorText'>Settings</p>
         </button> 
@@ -45,6 +48,12 @@ const HomeWrapper = ({children, pos=0}) => {
         </button>
         <button 
           className={pos === 3 ? 'HomeWrapperMenuItem HomeWrapperMenuItemSelected' : 'HomeWrapperMenuItem'}
+          onClick={() => window.location.href = '/customers'}
+        >Person
+          <p className='HomeWrapperButtonFlavorText'>Customers</p>
+        </button>
+        <button 
+          className={pos === 4 ? 'HomeWrapperMenuItem HomeWrapperMenuItemSelected' : 'HomeWrapperMenuItem'}
           onClick={() => window.location.href = '/settings'}
         >Settings
           <p className='HomeWrapperButtonFlavorText'>Settings</p>
@@ -55,7 +64,7 @@ const HomeWrapper = ({children, pos=0}) => {
         >Logout
           <p className='HomeWrapperButtonFlavorText'>Logout</p>
         </button>
-      </nav>
+    </nav>
       <section className="HomeWrapperMain">
         <header className="HomeWrapperHeader">
           <img src={Logo}></img>
