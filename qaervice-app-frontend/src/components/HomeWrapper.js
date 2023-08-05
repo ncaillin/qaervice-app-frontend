@@ -2,8 +2,7 @@ import './HomeWrapper.css';
 import Logo from '../images/logo.png'; 
 import {useState} from 'react';
 
-const HomeWrapper = ({children, pos=0}) => {
-  const breadcrumb = ['Home', 'Employees', 'Jobs', 'Settings'];
+const HomeWrapper = ({children, pos=0, breadcrumb='Home'}) => {
   const [menuShown, setMenuShown] = useState(false);
   return ( 
     <div className="HomeWrapperWrapper">
@@ -86,7 +85,7 @@ const HomeWrapper = ({children, pos=0}) => {
       <section className="HomeWrapperMain">
         <header className="HomeWrapperHeader">
           <img src={Logo}></img>
-          <h3>{'>'} {breadcrumb[pos]}</h3>
+          <h3>{'>'} {breadcrumb}</h3>
           <button className="HomeWrapperMenuButton" onClick={() => setMenuShown(!menuShown)}>{menuShown ? 'Close' : 'Menu'}</button>
         </header>
           {children}

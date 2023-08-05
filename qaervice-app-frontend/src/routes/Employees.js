@@ -10,7 +10,7 @@ import MarkPortrait from '../images/mark-portrait.jpeg';
 
 const Employees = () => {
   return (
-    <HomeWrapper pos={1}>
+    <HomeWrapper pos={1} breadcrumb={'Employees'}>
       <section className='EmployeeWrapper'>
         <button className='EmployeeAdd'><p>Add a new employee</p>Add_Circle</button>
         <div className='EmployeeTable'>

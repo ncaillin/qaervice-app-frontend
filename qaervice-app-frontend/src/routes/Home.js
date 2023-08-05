@@ -5,7 +5,7 @@ import HomeWrapper from '../components/HomeWrapper'
 
 const Home = () => {
   return (
-        <HomeWrapper pos={0}>
+        <HomeWrapper pos={0} breadcrumb={'Home'}>
           <main className="HomeGrid">
             <article className="HomeNumEmployees">
               <h3>Number of Employees:</h3>

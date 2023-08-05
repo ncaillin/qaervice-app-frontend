@@ -3,7 +3,7 @@ import HomeWrapper from '../components/HomeWrapper';
 
 const Settings = () => {
   return(
-    <HomeWrapper pos={4}></HomeWrapper>
+    <HomeWrapper pos={4} breadcrumb={'Settings'}></HomeWrapper>
   );
 };
 

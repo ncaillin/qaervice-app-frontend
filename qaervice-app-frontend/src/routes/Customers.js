@@ -3,7 +3,7 @@ import HomeWrapper from '../components/HomeWrapper';
 
 const Customers = () => {
   return (
-    <HomeWrapper pos={3}></HomeWrapper>
+    <HomeWrapper pos={3} breadcrumb={'Customers'}></HomeWrapper>
   );
 };
 
