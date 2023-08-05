@@ -25,10 +25,20 @@
   align-items: center;
   box-sizing: border-box;
 }
+.HomeAvgRatingWrapper{
+  flex-grow: 1;
+  width: 13rem;
+  justify-self: center;
+  align-self: center;
+  bottom: 0.5rem;
+}
 @media (max-width: 600px) {
   .HomeGrid {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+  }
+  .HomeAvgRatingWrapper {
+    width: 5rem;
   }
 }

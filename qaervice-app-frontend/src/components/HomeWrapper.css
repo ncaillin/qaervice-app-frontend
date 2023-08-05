@@ -4,7 +4,7 @@
   min-height: 100vh;
   background-color: hsl(var(--grey-900));
   display: grid;
-  grid-template-columns: 1fr 8fr;
+  grid-template-columns: 5rem 1fr;
   padding: 0.5rem;
   grid-gap: 0.5rem;
   box-sizing: border-box;
@@ -46,7 +46,7 @@
   max-width: 100%;
   height: 100%;
   display: grid;
-  grid-template-rows: 1fr 9fr;
+  grid-template-rows: 4rem 1fr;
   box-sizing: border-box;
   grid-gap: 0.5rem;
   min-height: 0;
@@ -89,6 +89,7 @@
   padding: 0.5rem;
   gap: 0.5rem;
   display: none;
+  z-index: 2;
 }
 .HomeWrapperMobileMenuWrapperShown > button {
   width: 100%;
@@ -102,7 +103,7 @@
 }
 .HomeWrapperButtonFlavorText {
   font-family: 'Roboto';
-  font-size: 1rem;
+  font-size: 0.8rem;
   position: absolute;
   top: 7%;
   margin: 0;

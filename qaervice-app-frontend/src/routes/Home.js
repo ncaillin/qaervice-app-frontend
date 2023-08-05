@@ -17,7 +17,7 @@ const Home = () => {
             </article> 
             <article className="HomeRating">
               <h3>Average rating:</h3>
-              <h2>4.7</h2>
+              <h2>9.2</h2>
             </article> 
             <article className="HomeJobs">
               <h3>Jobs in progress:</h3>
