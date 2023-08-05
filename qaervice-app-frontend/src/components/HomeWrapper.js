@@ -8,22 +8,40 @@ const HomeWrapper = ({children, pos=0}) => {
   return ( 
     <div className="HomeWrapperWrapper">
       <nav className={menuShown ? "HomeWrapperMobileMenuWrapperShown" : "HomeWrapperMobileMenuWrapperHidden"}>
-        <button className="HomeWrapperMobileMenuItem">Home
+        <button 
+          className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/home'}
+          >Home
           <p className='HomeWrapperButtonFlavorText'>Home</p>
         </button> 
-        <button className="HomeWrapperMobileMenuItem">Badge
+        <button 
+          className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/employees'}
+          >Badge
           <p className='HomeWrapperButtonFlavorText'>Employees</p>
         </button> 
-        <button className="HomeWrapperMobileMenuItem">Work
+        <button 
+          className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/jobs'}
+          >Work
           <p className='HomeWrapperButtonFlavorText'>Jobs</p>
         </button> 
-        <button className="HomeWrapperMobileMenuItem">Person
+        <button 
+          className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/customers'}
+          >Person
           <p className='HomeWrapperButtonFlavorText'>Customers</p>
         </button> 
-        <button className="HomeWrapperMobileMenuItem">Settings
+        <button 
+          className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/settings'}
+        >Settings
           <p className='HomeWrapperButtonFlavorText'>Settings</p>
         </button> 
-        <button className="HomeWrapperMobileMenuItem">Logout
+        <button 
+          className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/login'}
+          >Logout
           <p className='HomeWrapperButtonFlavorText'>Logout</p>
         </button> 
       </nav>
