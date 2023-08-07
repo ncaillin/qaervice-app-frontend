@@ -28,7 +28,8 @@
   border: none;
   outline: none;
   font-family: 'Material Symbols Outlined';
-  font-size: 3rem;
+  color: hsl(var(--grey-100));
+  font-size: 2rem;
 }
 .HomeWrapperMenuItem:hover {
   background-color: hsl(var(--grey-500));
