@@ -1,0 +1,130 @@
+.JobsWrapper {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+  grid-gap: 0.5rem;
+}
+.JobsFilterSort {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: hsl(var(--grey-900));
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 0.5rem;
+}
+.JobsFilter {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: hsl(var(--grey-700));
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+.JobsSort {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: hsl(var(--grey-700));
+  display: flex;
+  align-items: center;
+  padding: 0.25rem;
+}
+.JobsSort > select {
+  width: 7rem;
+  height: 2rem;
+  margin: auto;
+}
+
+.JobsList {
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: hsl(var(--grey-700));
+  padding: 0.5rem;
+  display: grid;
+  grid-template-rows: 5rem 1fr;
+  flex-direction: column;
+  grid-gap: 0.25rem;
+}
+.JobsList > div {
+  position: relative;
+}
+.JobsListHeading {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.JobsListTable {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: repeat(11, 1fr);
+  grid-gap: 0.2rem;
+  overflow-x: auto;
+}
+.JobsListTable > * {
+  min-width: 900px;
+}
+.JobsListHeading > p {
+  font-size: 1rem;
+  margin: 0;
+  margin: auto;
+  color: hsl(var(--brand-200));
+}
+.JobsNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.JobsButtonActive, .JobsButtonInactive {
+  font-family: 'Material Symbols Outlined';
+  background-color: transparent;
+  border: none;
+  font-size: 4rem;
+  color: hsl(var(--grey-100));
+}
+.JobsButtonInactive {
+  color: hsl(var(--grey-600));
+}
+.JobsFilterItem {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  box-sizing: border-box;
+  margin-left: 0.5rem;
+  padding-left: 0.5rem;
+  border-style: solid;
+  border-color: hsl(var(--grey-600));
+  border-width: 0 0 0 0.1rem;
+  align-items: center;
+}
+.JobsFilterItem > select {
+  width: 100%;
+  height: 2rem;
+}
+.JobsFilterItem > p {
+  margin: 0;
+}
+@media (max-width: 830px) {
+  .JobsSort > p, .JobsFilter > p, .JobsFilterItem > p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 600px) {
+  .JobsFilterSort {
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+  .JobsWrapper {
+    grid-template-rows: 10rem 1fr;
+  }
+}
