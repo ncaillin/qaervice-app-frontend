@@ -39,6 +39,12 @@ const HomeWrapper = ({children, pos=0, breadcrumb='Home'}) => {
         </button> 
         <button 
           className="HomeWrapperMobileMenuItem"
+          onClick={() => window.location.href='/help'}
+        >Help
+          <p className='HomeWrapperButtonFlavorText'>Help</p>
+        </button> 
+        <button 
+          className="HomeWrapperMobileMenuItem"
           onClick={() => window.location.href='/login'}
           >Logout
           <p className='HomeWrapperButtonFlavorText'>Logout</p>
@@ -74,6 +80,12 @@ const HomeWrapper = ({children, pos=0, breadcrumb='Home'}) => {
           onClick={() => window.location.href = '/settings'}
         >Settings
           <p className='HomeWrapperButtonFlavorText'>Settings</p>
+        </button>
+        <button 
+          className={pos === 5 ? 'HomeWrapperMenuItem HomeWrapperMenuItemSelected' : 'HomeWrapperMenuItem'}
+          onClick={() => window.location.href = '/help'}
+        >Help
+          <p className='HomeWrapperButtonFlavorText'>Help</p>
         </button>
         <button 
           className='HomeWrapperMenuItem'

@@ -7,6 +7,7 @@ import Employees from './routes/Employees';
 import Jobs from './routes/Jobs';
 import Customers from './routes/Customers';
 import Settings from './routes/Settings';
+import Help from './routes/Help';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
   {
     path: '/settings',
     element: <Settings />,
+  },
+  {
+    path: '/help',
+    element: <Help />,
   },
 ]);
 
