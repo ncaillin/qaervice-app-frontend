@@ -58,17 +58,6 @@
   align-items: center;
   box-sizing: border-box;
 }
-.CustomerFilterSortBody > select {
-  height: 1.5rem;
-  min-width: 6rem;
-  background-color: hsl(var(--grey-800));
-  border-style: solid;
-  border-width: 0.1rem;
-  border-radius: 0.2rem;
-  border-color: hsl(var(--brand-500));
-  color: hsl(var(--grey-100));
-  box-sizing: border-box;
-}
 .CustomerFilterSortBody > p {
   margin: 0;
   color: hsl(var(--brand-300));
