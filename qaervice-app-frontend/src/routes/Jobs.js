@@ -1,6 +1,6 @@
 import './Jobs.css';
 import HomeWrapper from '../components/HomeWrapper';
-import JobItem from '../components/JobItem';
+import { Table, TableItem } from '../components/Table';
 
 const Jobs = () => {
   return (
@@ -50,34 +50,88 @@ const Jobs = () => {
             </div>
           </section>
         </nav>
-        <section className='JobsList'>
-          <nav className='JobsNav'>
-            <button className='JobsButtonInactive'>Chevron_Left</button>
-            <p>Showing 1-10 of 246</p>
-            <button className='JobsButtonActive'>Chevron_Right</button>
-          </nav>
-          <div>
-          <section className='JobsListTable'>
-            <section className='JobsListHeading'>
-              <p>Customer</p>
-              <p>Employee</p>
-              <p>Date</p>
-              <p>Time spent</p>
-              <p>Rating</p>
-            </section>
-            <JobItem customer={'Jane Smith'} employee={'Dave Schuster'} date={'07/08/23 15:42'} time={122} />
-            <JobItem customer={'Jack Brown'} employee={'Elaine Marble'} date={'07/08/23 14:28'} time={125} />
-            <JobItem customer={'Sally Jane'} employee={'Jane March'} date={'07/08/23 13:30'} time={128} />
-            <JobItem customer={'Barry Blue'} employee={'Dave Schuster'} date={'07/08/23 12:50'} time={119} rating={10} />
-            <JobItem customer={'Michael North'} employee={'John Wood'} date={'06/08/23 16:40'} time={117} rating={10} />
-            <JobItem customer={'Jenny Woods'} employee={'Mark Smith'} date={'06/08/23 16:30'} time={52} rating={2} />
-            <JobItem customer={'Gerome White'} employee={'Dave Schuster'} date={'06/08/23 12:50'} time={101} rating={7.2} />
-            <JobItem customer={'Mitch Michaels'} employee={'Mark Smith'} date={'06/08/23 11:30'} time={54} />
-            <JobItem customer={'Jerry Dove'} employee={'Jane March'} date={'05/08/23 16:59'} time={122} rating={9} />
-            <JobItem customer={'Dave Trellis'} employee={'Elaine Marble'} date={'05/08/23 15:32'} time={129}/>
-          </section>
-          </div>
-        </section>
+          <Table headings={['Customer', 'Employee', 'Date', 'Time Spent', 'Rating', '']}>
+          <TableItem>
+            <p>Jane Smith</p>
+            <p>David Schuster</p>
+            <p>07/08/23 15:42</p>
+            <p>122</p>
+            <p>Not Recieved</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Jack Brown</p>
+            <p>Elaine Marble</p>
+            <p>07/08/23 14:28</p>
+            <p>125</p>
+            <p>Not Recieved</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Sally Jane</p>
+            <p>Jane March</p>
+            <p>07/08/23 13:30</p>
+            <p>128</p>
+            <p>Not Recieved</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Barry Blue</p>
+            <p>Dave Schuster</p>
+            <p>07/08/23 12:50</p>
+            <p>119</p>
+            <p>10</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Michael North</p>
+            <p>John Wood</p>
+            <p>06/08/23 16:40</p>
+            <p>117</p>
+            <p>10</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Jenny Woods</p>
+            <p>Mark Smith</p>
+            <p>06/08/23 16:30</p>
+            <p>52</p>
+            <p>2</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Gerome White</p>
+            <p>Dave Schuster</p>
+            <p>06/08/23 12:50</p>
+            <p>101</p>
+            <p>7.2</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Mitch Michaels</p>
+            <p>Mark Smith</p>
+            <p>06/08/23 11:30</p>
+            <p>54</p>
+            <p>Not Recieved</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Jerry Dove</p>
+            <p>Jane March</p>
+            <p>05/08/23 16:59</p>
+            <p>122</p>
+            <p>9</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          <TableItem>
+            <p>Dave Trellis</p>
+            <p>Elaine Marble</p>
+            <p>05/08/23 15:32</p>
+            <p>129</p>
+            <p>Not Recieved</p>
+            <button className='JobsDetailButton'><p>Info</p>Detailed View</button>
+          </TableItem>
+          </Table>
       </section>
     </HomeWrapper>
   );
