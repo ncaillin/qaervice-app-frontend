@@ -8,6 +8,9 @@ const Jobs = () => {
       <section className='JobsWrapper'>
         <nav className='JobsFilterSort'>
           <section className='JobsSort'>
+            <p>Sort:</p>
+            <div className='JobsSelectWrapper'>
+            <div className='JobsFilterItem'>
             <p>Sort by:</p>
             <select>
               <option value='Date_DESC'>Date (new -{'>'} old)</option>
@@ -15,38 +18,30 @@ const Jobs = () => {
               <option value='Rating_DESC'>Rating (high -{'>'} low)</option>
               <option value='Rating_ASC'>Rating (low -{'>'} high)</option>
             </select>
+            </div>
+            </div>
           </section>
           <section className='JobsFilter'>
-            <p>Filter by:</p>
-            <div className='JobsFilterItem'>
-              <p>Date:</p>
-              <select>
-                <option value='Date_Any'>any</option>
-              </select>
-            </div>
-            <div className='JobsFilterItem'>
-              <p>Employee:</p>
-              <select>
-                <option value='Employee_Any'>any</option>
-              </select>
-            </div>
-            <div className='JobsFilterItem'>
-              <p>Customer:</p>
-              <select>
-                <option value='Customer_Any'>any</option>
-              </select>
-            </div>
-            <div className='JobsFilterItem'>
-              <p>Min Rating:</p>
-              <select>
-                <option value='MinRating_Any'>any</option>
-              </select>
-            </div>
-            <div className='JobsFilterItem'>
-              <p>Max Rating:</p>
-              <select>
-                <option value='MaxRating_Any'>any</option>
-              </select>
+            <p>Filter:</p>
+            <div className='JobsSelectWrapper'>
+              <div className='JobsFilterItem'>
+                <p>Date:</p>
+                <select>
+                  <option value='Date_Any'>any</option>
+                </select>
+              </div>
+              <div className='JobsFilterItem'>
+                <p>Employee:</p>
+                <select>
+                  <option value='Employee_Any'>any</option>
+                </select>
+              </div>
+              <div className='JobsFilterItem'>
+                <p>Customer:</p>
+                <select>
+                  <option value='Customer_Any'>any</option>
+                </select>
+              </div>
             </div>
           </section>
         </nav>

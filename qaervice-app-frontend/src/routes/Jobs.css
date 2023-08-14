@@ -22,8 +22,11 @@
   box-sizing: border-box;
   background-color: hsl(var(--grey-700));
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 0.25rem;
+}
+.JobsFilter > p, .JobsSort > p {
+  margin: 0;
 }
 .JobsSort {
   width: 100%;
@@ -31,7 +34,7 @@
   box-sizing: border-box;
   background-color: hsl(var(--grey-700));
   display: flex;
-  align-items: center;
+  flex-direction: column;
   padding: 0.25rem;
 }
 
@@ -62,13 +65,17 @@
   box-sizing: border-box;
   margin-left: 0.5rem;
   padding-left: 0.5rem;
-  border-style: solid;
-  border-color: hsl(var(--grey-600));
-  border-width: 0 0 0 0.1rem;
   align-items: center;
+}
+.JobsSelectWrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 100%;
 }
 .JobsFilterItem > p {
   margin: 0;
+  color: hsl(var(--brand-300));
 }
 @media (max-width: 830px) {
   .JobsSort > p, .JobsFilter > p, .JobsFilterItem > p {
