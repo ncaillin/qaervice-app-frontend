@@ -21,6 +21,14 @@
   border-color: hsl(var(--brand-700));
   border-width: 0.2rem;
   border-radius: 0.4rem;
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
+}
+.CustomerNewButton:hover {
+  transform: translate(-0.08rem, -0.16rem);
+  box-shadow: 0.1rem 0.1rem 1rem hsl(var(--brand-200));
+  background-color: hsl(var(--brand-600));
+  color: hsl(var(--brand-100));
+  transition: transform 0.2s, box-shadow 0.2s, background-color 0.2s, color 0.2s;
 }
 .CustomerNewButton > p {
   font-family: 'Material Symbols Outlined';
