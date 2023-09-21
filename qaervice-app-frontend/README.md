@@ -2,6 +2,12 @@
 
 The frontend for the qaervice app
 
+All coded using react js framework.
+
+All backend requests done with axios
+
+Authentication through session cookies
+
 ## Styling
 
 ### Colors
@@ -30,6 +36,7 @@ Grey    |hsl(var(--grey-100))|hsl(var(--grey-200))|hsl(var(--grey-300))|hsl(var(
 Reference in root element of specific page, and use setTimeout to display message for a time
     
     import { useState } from react
+    import Alert from '../components/Alert'
 
     const SamplePage = () => 
     {
@@ -53,4 +60,21 @@ Reference in root element of specific page, and use setTimeout to display messag
             </div>
         )
     }
+
+## Pages
+
+### Owner
+#### login
+- Allows user to log into app
+- on successful login redirect to /home or /employeeApp/home depending on if employee or owner
+- displays appropriate error message on failure
+- contains link to registration page
+- performs axios POST request to api.qaervice.com/v2/misc/login
+#### register
+#### home
+#### jobs
+#### customers
+#### settings
+#### help
+### employee
 
