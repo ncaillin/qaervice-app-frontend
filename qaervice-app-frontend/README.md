@@ -2,6 +2,20 @@
 
 The frontend for the qaervice app
 
+## Styling
+
+### Colors
+
+#### all colors done with 5 colors each with 9 css variables for lightness
+
+color   | 100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900
+---     | --- | --- | --- | --- | --- | --- | --- | --- | ---
+Brand   |hsl(var(--brand-100))|hsl(var(--brand-200))|hsl(var(--brand-300))|hsl(var(--brand-400))|hsl(var(--brand-500))|hsl(var(--brand-600))|hsl(var(--brand-700))|hsl(var(--brand-800))|hsl(var(--brand-900))|
+Success |hsl(var(--success-100))|hsl(var(--success-200))|hsl(var(--success-300))|hsl(var(--success-400))|hsl(var(--success-500))|hsl(var(--success-600))|hsl(var(--success-700))|hsl(var(--success-800))|hsl(var(--success-900))|
+Warn    |hsl(var(--warn-100))|hsl(var(--warn-200))|hsl(var(--warn-300))|hsl(var(--warn-400))|hsl(var(--warn-500))|hsl(var(--warn-600))|hsl(var(--warn-700))|hsl(var(--warn-800))|hsl(var(--warn-900))|
+Error   |hsl(var(--error-100))|hsl(var(--error-200))|hsl(var(--error-300))|hsl(var(--error-400))|hsl(var(--error-500))|hsl(var(--error-600))|hsl(var(--error-700))|hsl(var(--error-800))|hsl(var(--error-900))|
+Grey    |hsl(var(--grey-100))|hsl(var(--grey-200))|hsl(var(--grey-300))|hsl(var(--grey-400))|hsl(var(--grey-500))|hsl(var(--grey-600))|hsl(var(--grey-700))|hsl(var(--grey-800))|hsl(var(--grey-900))|
+
 ## Components
 
 ### Alert
