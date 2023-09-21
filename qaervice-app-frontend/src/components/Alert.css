@@ -1,0 +1,33 @@
+.alertErrorWrapper {
+  position: absolute;
+  top: 1rem;
+  left: 3rem;
+  right: 3rem;
+  height: 6rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: 4rem 1fr;
+  background-color: hsl(var(--error-100));
+  border: 0.2rem solid hsl(var(--error-500));
+  color: hsl(var(--error-500));
+}
+.alertIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-family: 'Material Symbols Outlined';
+}
+.alertP {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 1000px) {
+  .alertErrorWrapper {
+    left: 0.5rem;
+    right: 0.5rem;
+  }
+}
+

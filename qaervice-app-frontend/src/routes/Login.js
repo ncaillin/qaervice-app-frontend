@@ -2,6 +2,12 @@ import './Login.css';
 import { useState } from 'react';
 import cat from '../images/cat.png';
 import Input from '../components/Input';
+import Alert from '../components/Alert';
+import axios from 'axios'
+
+const {
+  BACKEND_URL = 'http://localhost:3001'
+} = process.env
 
 
 const Login = () => {
@@ -9,14 +15,31 @@ const Login = () => {
   const [password, setPassword] = useState('');
   const [email, setEmail] = useState('');
 
+  const [type, setType] = useState('null');
+  const [message, setMessage] = useState('');
+
   const handleRegister = (e) => {
     e.preventDefault();
     window.location.href = '/register';
   };
 
-  const handleLogin = (e) => {
+  const handleLogin = async (e) => {
     e.preventDefault();
-    window.location.href = '/home';
+    try {
+      const response = await axios.post(`${BACKEND_URL}/misc/login`, {email, password}, {withCredentials: true})
+      console.log(response)
+      if (response.data.type === 'Owner')
+      {
+        return window.location.href = '/home'
+      }
+      return window.location.href = '/employeeApp/home'
+    } catch(err) {
+      setType('error')
+      setMessage(err.response.data.error)
+      setTimeout(() => {
+        setType('null')
+      }, 3000)
+    }
   }
 
   const validateEmail = (test=email) => {
@@ -36,6 +59,7 @@ const Login = () => {
 
   return (
     <section className="loginWrapper">
+      <Alert type={type} message={message}/>
       <aside className="loginDecorationAside">
         <h2>Log In Today</h2>
         <img src={cat} className="loginCat"/>
