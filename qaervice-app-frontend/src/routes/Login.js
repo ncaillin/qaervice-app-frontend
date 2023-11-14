@@ -1,13 +1,11 @@
 import './Login.css';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import cat from '../images/cat.png';
 import Input from '../components/Input';
 import Alert from '../components/Alert';
 import axios from 'axios'
+import { BACKEND_URL } from '../utils/env'
 
-const {
-  BACKEND_URL = 'http://localhost:3001'
-} = process.env
 
 
 const Login = () => {
@@ -17,6 +15,21 @@ const Login = () => {
 
   const [type, setType] = useState('null');
   const [message, setMessage] = useState('');
+
+
+  useEffect(() => 
+  {
+    const searchParams = new URLSearchParams(window.location.search)
+    if (searchParams.get('alert') === 'success')
+    {
+      setType('success')
+      setMessage('Account created, log in now!')
+      setTimeout(() => 
+      {
+        setType('null')
+      }, 2000)
+    }
+  }, [])
 
   const handleRegister = (e) => {
     e.preventDefault();

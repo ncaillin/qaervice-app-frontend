@@ -8,11 +8,21 @@ import Jobs from './routes/Jobs';
 import Customers from './routes/Customers';
 import Settings from './routes/Settings';
 import Help from './routes/Help';
+import EmployeeHome from './routes/EmployeeHome';
+import EmployeeAddTask from './routes/EmployeeAddTask'
 
 const router = createBrowserRouter([
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/employeeApp/home",
+    element: <EmployeeHome />
+  },
+  {
+    path: "/employeeApp/addTask",
+    element: <EmployeeAddTask />
   },
   {
     path: "/colors",

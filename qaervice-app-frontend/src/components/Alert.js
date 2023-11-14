@@ -12,7 +12,7 @@ const Alert = ({type='null', message='test message'}) =>
 const AlertError = (message) => {
   return (
     <article className='alertErrorWrapper'>
-      <div className='alertIcon'>face</div>
+      <div className='alertIcon'>error</div>
       <p className= 'alertP'>error: {message}</p>
     </article>
   )
@@ -20,8 +20,9 @@ const AlertError = (message) => {
 
 const AlertSuccess = (message) => {
   return (
-    <article className='alertWrapper'>
-      FOO
+    <article className='alertSuccessWrapper'>
+      <div className='alertIcon'>check_circle</div>
+      <p className='alertP'>{message}</p>
     </article>
   )
 }

@@ -31,8 +31,6 @@
   box-sizing: border-box;
   box-shadow: -0.3rem 0.3rem 1rem hsl(var(--grey-700));
   display: grid;
-  grid-template-rows: 2fr 2fr 1fr 4fr;
-  grid-gap: 2rem;
   align-items: center;
   color: hsl(var(--grey-100));
   text-align: center;

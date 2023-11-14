@@ -1,4 +1,4 @@
-.alertErrorWrapper {
+.alertErrorWrapper, .alertSuccessWrapper {
   position: absolute;
   top: 1rem;
   left: 3rem;
@@ -8,9 +8,17 @@
   box-sizing: border-box;
   display: grid;
   grid-template-columns: 4rem 1fr;
+  z-index: 10
+}
+.alertErrorWrapper {
   background-color: hsl(var(--error-100));
-  border: 0.2rem solid hsl(var(--error-500));
+  border: 0.2rem solid hsl(var(--error-600));
   color: hsl(var(--error-500));
+}
+.alertSuccessWrapper {
+  background-color: hsl(var(--success-100));
+  border: 0.2rem solid hsl(var(--success-600));
+  color: hsl(var(--success-600));
 }
 .alertIcon {
   display: flex;

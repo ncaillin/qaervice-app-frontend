@@ -45,7 +45,7 @@ const Jobs = () => {
             </div>
           </section>
         </nav>
-          <Table headings={['Customer', 'Employee', 'Date', 'Time Spent', 'Rating', '']}>
+        <Table headings={['Customer', 'Employee', 'Date', 'Time Spent', 'Rating', '']}>
           <TableItem>
             <p>Jane Smith</p>
             <p>David Schuster</p>
