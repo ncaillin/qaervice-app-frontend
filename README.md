@@ -6,4 +6,4 @@ Tech stack:
 - NodeJS
 - Docker
 - Jenkins
-## API documentation can be found on the backend repo
+## API documentation can be found on the v2 branch of the backend repo
